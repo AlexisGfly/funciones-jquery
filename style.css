@@ -50,3 +50,10 @@
     display: none;
     margin-left: 10%;
 }
+
+.estilo_imagen_2{
+    width: 200px;
+    /* text-align: center; */
+    display: block;
+    margin-left: 10%;
+}
