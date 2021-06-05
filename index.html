@@ -22,6 +22,14 @@
             $('#boton_3').click(function(){
                 $('#f_append').append( "<p>This is a new paragraph</p>" );
             });
+
+            $('#boton_4').click(function(){
+                $('#f_hide_show').hide();
+            });
+
+            $('#boton_5').click(function(){
+                $('#f_hide_show').show();
+            });
             
         });
     </script>
@@ -45,6 +53,13 @@
             <h1 class = "estilo_titulo_1">Append</h1>
             <button id="boton_3" class = "estilo_boton">Append</button>
             <p id="f_append" class = "estilo_parrafo">Click the button to append a new paragraph</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Hide / Show</h1>
+            <button id="boton_4" class = "estilo_boton">Hide</button>
+            <button id="boton_5" class = "estilo_boton">Show</button>
+            <p id="f_hide_show" class = "estilo_parrafo">Click buttons to hide and show text</p>
         </div>
 
         <div>
