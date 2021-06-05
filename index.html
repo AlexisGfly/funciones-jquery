@@ -30,7 +30,50 @@
             $('#boton_5').click(function(){
                 $('#f_hide_show').show();
             });
+
+            $('#boton_6').click(function(){
+                $('#f_toggle').toggle();
+            });
+
+            $('#boton_7').click(function(){
+                $('#f_slideUpDown').slideUp();
+            });
+
+            $('#boton_8').click(function(){
+                $('#f_slideUpDown').slideDown();
+            });
+
+            $('#boton_9').click(function(){
+                $('#f_fadeInOut').fadeOut();
+            });
+
+            $('#boton_10').click(function(){
+                $('#f_fadeInOut').fadeIn();
+            });
             
+            $('#boton_11').click(function(){
+                $('#f_before').before("<p>Hello world!</p>");
+            });
+
+            $('#boton_12').click(function(){
+                $('#f_after').after("<p>Hello world!</p>");
+            });
+
+            $('#boton_13').click(function(){
+                $('#f_html').html("Hello <b>world!</b>");
+            });
+
+            $('#boton_14').click(function(){
+                $('#f_attr').removeClass("estilo_imagen_2").attr("width", "300");
+            });
+
+            $('#boton_15').click(function(){
+                $("input:text").val("Ecuador");
+            });
+
+            $('#boton_16').click(function(){
+                $('#f_text').text("Hello world!");
+            });
         });
     </script>
 </head>
@@ -60,6 +103,64 @@
             <button id="boton_4" class = "estilo_boton">Hide</button>
             <button id="boton_5" class = "estilo_boton">Show</button>
             <p id="f_hide_show" class = "estilo_parrafo">Click buttons to hide and show text</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Toggle</h1>
+            <button id="boton_6" class = "estilo_boton">Toggle</button>
+            <p id="f_toggle" class = "estilo_parrafo">Click the button to Hide&Show text by toggle</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Slide Up / Down</h1>
+            <button id="boton_7" class = "estilo_boton">Slide Up</button>
+            <button id="boton_8" class = "estilo_boton">Slide Down</button>
+            <p id="f_slideUpDown" class = "estilo_parrafo">Click buttons to slide up & down text</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Fade In / Out</h1>
+            <button id="boton_9" class = "estilo_boton">Fade Out</button>
+            <button id="boton_10" class = "estilo_boton">Fade In</button>
+            <p id="f_fadeInOut" class = "estilo_parrafo">Click buttons to fade In & Out text</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Before</h1>
+            <button id="boton_11" class = "estilo_boton">Before</button>
+            <p id="f_before" class = "estilo_parrafo">Click the button to insert content before p</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">After</h1>
+            <button id="boton_12" class = "estilo_boton">After</button>
+            <p id="f_after" class = "estilo_parrafo">Click the button to insert content after p</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Html</h1>
+            <button id="boton_13" class = "estilo_boton">Html</button>
+            <p id="f_html" class = "estilo_parrafo">Click the button to change content</p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Attr</h1>
+            <button id="boton_14" class = "estilo_boton">Attr</button>
+            <p class = "estilo_parrafo">Click the button to set the width of the image</p>
+            <img id="f_attr" class="estilo_imagen_2" src="https://static.wixstatic.com/media/75be00_66487f88903e4492a0e27e1b79db8291~mv2.jpg" alt="imagen de la web">
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Val</h1>
+            <button id="boton_15" class = "estilo_boton">Val</button>
+            <p class = "estilo_parrafo">Click the button to set the value of input</p>
+            <p>Country: <input type="text" name="user"></p>
+        </div>
+
+        <div class = "estilo_bloque_1">
+            <h1 class = "estilo_titulo_1">Text</h1>
+            <button id="boton_16" class = "estilo_boton">Text</button>
+            <p id="f_text" class = "estilo_parrafo">Click the button to set content of p</p>
         </div>
 
         <div>
