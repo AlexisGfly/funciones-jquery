@@ -11,13 +11,14 @@
 
     <script>
         $(document).ready(function() {
-            // $('a').click(function(){
-            //     alert("===> ¡Haz cliqueado un botón! ");
-            // });
-            
             $('#boton_1').click(function(){
                 $('#f_addclass').addClass( "estilo_parrafo cambio_red" );
             });
+
+            $('#boton_2').click(function(){
+                $('#f_slidetoggle').slideToggle( "slow" );
+            });
+
             
         });
     </script>
@@ -29,16 +30,20 @@
             <button id="boton_1" class = "estilo_boton">AddClass</button>
             <p id="f_addclass" class = "estilo_parrafo">Click the button to add class 'red' to this paragraph</p>
         </div>
+
         <div class = "estilo_bloque_1">
             <h1 class = "estilo_titulo_1">Slidetoggle</h1>
-            <button class = "estilo_boton">Slidetoggle</button>
+            <button id="boton_2" class = "estilo_boton">Slidetoggle</button>
             <p class = "estilo_parrafo">Click the button to slidetoggle a hidden image</p>
+            <img id="f_slidetoggle" class="estilo_imagen" src="https://www.acens.com/comunicacion/wp-content/images/2016/12/word-image-1.png" alt="imagen de la web">
         </div>
+
         <div class = "estilo_bloque_1">
             <h1 class = "estilo_titulo_1">Append</h1>
-            <button class = "estilo_boton">Append</button>
+            <button id="boton_3" class = "estilo_boton">Append</button>
             <p class = "estilo_parrafo">Click the button to append a new paragraph</p>
         </div>
+
         <div>
             <a href="file:///D:/Documentos/Desktop/BOOTCAMP/JQUERY/funciones-jquery/index.html" class = "estilo_boton_reset">Reset</a>
         </div>

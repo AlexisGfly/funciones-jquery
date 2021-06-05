@@ -44,3 +44,9 @@
 .cambio_red{
     background-color: rgb(216, 100, 100);
 }
+.estilo_imagen{
+    width: 400px;
+    text-align: center;
+    display: none;
+    margin-left: 10%;
+}
