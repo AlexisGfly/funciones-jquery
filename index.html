@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Funciones JQuery</title>
+
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+    <script>
+        $(document).ready(function() {
+            // $('a').click(function(){
+            //     alert("===> ¡Haz cliqueado un botón! ");
+            // });
+            
+            $('#boton_1').click(function(){
+                $('#f_addclass').addClass( "estilo_parrafo cambio_red" );
+            });
+            
+        });
+    </script>
 </head>
 <body>
     <div>
         <div class = "estilo_bloque_1">
             <h1 class = "estilo_titulo_1">AddClass</h1>
-            <a href="" class = "estilo_boton">AddClass</a>
-            <p class = "estilo_parrafo">Click the button to add class 'red' to this paragraph</p>
+            <button id="boton_1" class = "estilo_boton">AddClass</button>
+            <p id="f_addclass" class = "estilo_parrafo">Click the button to add class 'red' to this paragraph</p>
         </div>
         <div class = "estilo_bloque_1">
             <h1 class = "estilo_titulo_1">Slidetoggle</h1>
-            <a href="" class = "estilo_boton">Slidetoggle</a>
+            <button class = "estilo_boton">Slidetoggle</button>
             <p class = "estilo_parrafo">Click the button to slidetoggle a hidden image</p>
         </div>
         <div class = "estilo_bloque_1">
             <h1 class = "estilo_titulo_1">Append</h1>
-            <a href="" class = "estilo_boton">Append</a>
+            <button class = "estilo_boton">Append</button>
             <p class = "estilo_parrafo">Click the button to append a new paragraph</p>
+        </div>
+        <div>
+            <a href="file:///D:/Documentos/Desktop/BOOTCAMP/JQUERY/funciones-jquery/index.html" class = "estilo_boton_reset">Reset</a>
         </div>
     </div>
 </body>

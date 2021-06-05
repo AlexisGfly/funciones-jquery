@@ -16,18 +16,31 @@
     text-align: center;
     display: block;
 }
+.estilo_boton_reset{
+    display: block;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(69, 179, 120);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 1px solid blue;
+    text-decoration: none;
+}
 .estilo_boton{
     display: inline-block;
-    width: 80px;
+    width: 100px;
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px;
     border: 1px solid blue;
-    text-decoration: none;
+    
 }
 .estilo_parrafo{
     display: inline-block;
     padding: 10px;
     margin-left: 10px;
+}
+.cambio_red{
+    background-color: rgb(216, 100, 100);
 }
